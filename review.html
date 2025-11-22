@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <script src="tailwind.js"></script>
+</head>
+
+<body class="bg-orange-100 ">
+
+    <div class=" fixed inset-0 z-50 justify-items-center content-center">
+
+        <div class="bg-white rounded-lg shadow-lg p-8 w-96 relative">
+
+            <a href="./testimonial.html">
+                <button id="closePopup"
+                    class="absolute top-2 right-2 hover:bg-red-600 size-9 text-xl cursor-pointer">&times;
+                </button>
+
+            </a>
+            <form>
+                <label class="block mb-2 font-semibold">Name</label>
+                <input type="text" class="w-full border rounded-lg px-4 py-2 mb-4" placeholder="Your Name">
+
+                <label class="block mb-2 font-semibold">Email</label>
+                <input type="email" class="w-full border rounded-lg px-4 py-2 mb-4" placeholder="Your Email(optional)">
+
+                <label class="block mb-2 font-semibold">Phone number</label>
+                <input type="text" class="w-full border rounded-lg px-4 py-2 mb-4"
+                    placeholder="Your phone number(optional)">
+
+
+                <label class="block mb-2 font-semibold">review</label>
+                <textarea class="w-full border rounded-lg px-4 py-2 mb-4" rows="5"
+                    placeholder="Your review"></textarea>
+
+                <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg w-full">Send
+                    review
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <h1 class="text[1rem] md:text-2xl font-bold text-black flex mt-4 ml-5">Guinea<span
+            class="text-orange-600 ">fowl
+            Akure</span>
+    </h1>
+
+    <script src="main.js"></script>
+    <script src="https://www.momentcrm.com/embed"></script>
+<script>
+  MomentCRM('init', {
+    'teamVanityId': 'chilli',
+    'doChat': true,
+    'doTimeTravel': true,
+    'quadClickForFeedback': true,
+  });
+</script>
+</body>
+
+</html>
